@@ -1,0 +1,7 @@
+shuttles:
+  - remote: 192.168.122.10:80
+    local: localhost:8080
+    hostname: vm_1 # name of the ssh remote machine known by the host
+  - remote: 192.168.122.11:443
+    local: localhost:8443
+    hostname: vm_2

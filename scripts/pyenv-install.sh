@@ -3,6 +3,11 @@
 env_file=""
 
 cd "$HOME" || exit 1
+
+echo ". Install dependencies"
+sudo apt update -y
+sudo apt install -y make build-essential libreadline-dev
+
 curl https://pyenv.run | bash
 
 if [ -e "$HOME/.bash_profile" ];then
